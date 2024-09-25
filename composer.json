@@ -1,0 +1,27 @@
+{
+  "name": "vendor_name/test-app",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "macos",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "App\\Kernel\\": "kernel/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "predis/predis": "^2.2",
+    "ext-redis": "*"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.1",
+    "laravel/pint": "^1.17"
+  }
+}
